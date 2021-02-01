@@ -1,0 +1,204 @@
+/* fogli di stile per il sito "che tempo fa nelle capitali d'Europa" */
+
+/* generale */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body  {
+  width: 80%;
+  margin: auto;
+  background-image: url("immagini/cielo.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  width: 80%;
+  padding: 10px 5px 10px 5px;
+  background-color: #bb99ff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 9px 9px #999;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+}
+
+h4 {
+  text-align: center;
+  background-color: #9966ff;
+  padding: 3px;
+}
+
+#myInput {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 12px auto 12px auto;
+}
+
+/* contenitore dei paesi */
+
+.contenitoreGenerale {
+  padding-top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.contenitore {
+  width: 100px;
+  height: 160px;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.contenitore:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.9);
+  cursor: pointer;
+}
+
+.nome-paese {
+  padding-top: 10px;
+}
+
+.bandiere {
+  width: 80px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bottone {
+  width: 80px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: #ffffb3;
+  cursor: pointer;
+}
+
+.piccolo {
+  font-size: 15px;
+}
+
+
+/* riquadro per esporre il tempo - overlay */
+
+#centro {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.esponiTempo {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+#citta {
+  color: white;
+  font-size: 30px;
+}
+
+#temperatura {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+#simbolo-tempo {
+  font-size: 60px;
+  color: #00ffff
+}
+
+.contenuto {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* La croce per chiudere il overlay */
+
+#croce {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#croce:hover,
+#croce:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background-color: #bb99ff;
+  color: black;
+  margin-top: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.social img {
+  width: 30px;
+  padding-top: 5px;
+}
+
+.destra {
+  width: 40%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h6 {
+  padding: 2px 10px;
+}
+h5 {
+  padding: 5px 10px;
+}
+
+/* media query per schermi maggiori di 925px  */
+
+@media screen and (min-width: 925px) {
+  
+  .contenitoreGenerale {
+    padding-top: 225px;
+  }
+}

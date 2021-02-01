@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Open Weather, tempo. Europa, Capitali">
+	<meta name="description" content="che tempo fa nelle capitali europee">
+  <meta name="author" content="Massimo Dattero">
+  
+  <!-- link ai fogli di stile -->
+  <link rel="stylesheet" type="text/css" href="tempo.css">
+  
+  <!-- FAVICON  --> 
+	<link rel="shortcut icon" href="immagini/favicon-sole.ico" type="image/x-icon">
+  
+	<title>Weather</title>
+
+</head>
+
+<body>
+
+<header>
+  <h1>CHE TEMPO FA NELLE CAPITALI D'EUROPA ?</h1>
+  <h2> &#9927 - &#9728 - &#9729 - &#9730 - &#9731 - &#9928 - &#127777 </h2>
+  <input type="text" id="myInput" placeholder=" &#128269 Digita li nome di una capitale o una nazione.." title="Type in a name">
+  <h4 id="demo"></h4>
+</header>
+
+<main>
+  
+  <div class="contenitoreGenerale" id="filtro">
+  
+    <div class="contenitore" value="3183875" name="TIRANA">
+      <h3 class="nome-paese">Albania</h3>
+      <img src="immagini/albania.jpg" alt="bandiera dell'Albania" title="Bandiera dell'Albania" class="bandiere">
+      <button class="bottone">Tirana</button>
+    </div>
+    
+    <div class="contenitore" value="3041563" name="ANDORRA LA VELLA">
+      <h3 class="nome-paese">Andorra</h3>
+      <img src="immagini/andorra.jpg" alt="bandiera di Andorra" title="Bandiera di Andorra" class="bandiere">
+      <button class="bottone">Andorra la Vella</button>
+    </div>
+    
+    <div class="contenitore" value="616051" name="YEREVAN">
+      <h3 class="nome-paese">Armenia</h3>
+      <img src="immagini/armenia.jpg" alt="bandiera dell'Armenia" title="Bandiera dell'Armenia" class="bandiere">
+      <button class="bottone">Yerevan</button>
+    </div>
+    
+    <div class="contenitore" value="2761367" name="VIENNA">
+      <h3 class="nome-paese">Austria</h3>
+      <img src="immagini/austria.jpg" alt="bandiera dell'Austria" title="Bandiera dell'Austria" class="bandiere">
+      <button class="bottone">Vienna</button>
+    </div>
+    
+    <div class="contenitore" value="587084" name="BAKÙ">
+      <h3 class="nome-paese">Azerbaigian</h3>
+      <img src="immagini/Azerbaigian.jpg" alt="bandiera Azerbaigian" title="Bandiera Azerbaigian" class="bandiere">
+      <button class="bottone">Bakù</button>
+    </div>
+    
+    <div class="contenitore" value="2800867" name="BRUXELLES">
+      <h3 class="nome-paese">Belgio</h3>
+      <img src="immagini/belgio.jpg" alt="bandiera Belgio" title="Bandiera Belgio" class="bandiere">
+      <button class="bottone">Bruxelles</button>
+    </div>
+    
+    <div class="contenitore" value="625144" name="MINSK">
+      <h3 class="nome-paese">Bielorussia</h3>
+      <img src="immagini/bielorussia.jpg" alt="bandiera Bielorussia" title="Bandiera Bielorussia" class="bandiere">
+      <button class="bottone">Minsk</button>
+    </div>
+    
+    <div class="contenitore" value="3191281" name="SARAJEVO">
+      <h3 class="nome-paese piccolo">Bosnia-Erzegovina</h3>
+      <img src="immagini/bosnia-erzegovina.jpg" alt="bandiera Bosnia-Erzegovina" title="Bandiera Bosnia-Erzegovina" class="bandiere">
+      <button class="bottone">Sarajevo</button>
+    </div>
+    
+    <div class="contenitore" value="727011" name="SOFIA">
+      <h3 class="nome-paese">Bulgaria</h3>
+      <img src="immagini/bulgaria.jpg" alt="bandiera Bulgaria" title="Bulgaria" class="bandiere">
+      <button class="bottone">Sofia</button>
+    </div>
+    
+    <div class="contenitore" value="146268" name="NICOSIA">
+      <h3 class="nome-paese">Cipro</h3>
+      <img src="immagini/cipro.jpg" alt="bandiera Cipro" title="Cipro" class="bandiere">
+      <button class="bottone">Nicosia</button>
+    </div>
+    
+    <div class="contenitore" value="3164670" name="Città del Vaticano">
+      <h3 class="nome-paese piccolo">Città del Vaticano</h3>
+      <img src="immagini/citta-del-vaticano.jpg" alt="bandiera Città del Vaticano" title="Città del Vaticano" class="bandiere">
+      <button class="bottone">Città del Vaticano</button>
+    </div>
+    
+    <div class="contenitore" value="3186886" name="ZAGABRIA">
+      <h3 class="nome-paese">Croazia</h3>
+      <img src="immagini/croazia.jpg" alt="bandiera Croazia" title="Croazia" class="bandiere">
+      <button class="bottone">Zagabria</button>
+    </div>
+    
+    <div class="contenitore" value="2618425" name="COPENAGHEN">
+      <h3 class="nome-paese">Danimarca</h3>
+      <img src="immagini/danimarca.jpg" alt="bandiera Danimarca" title="Danimarca" class="bandiere">
+      <button class="bottone">Copenaghen</button>
+    </div>
+    
+    <div class="contenitore" value="588409" name="TALLINN">
+      <h3 class="nome-paese">Estonia</h3>
+      <img src="immagini/estonia.jpg" alt="bandiera Estonia" title="Estonia" class="bandiere">
+      <button class="bottone">Tallinn</button>
+    </div>
+    
+    <div class="contenitore" value="658225" name="HELSINKI">
+      <h3 class="nome-paese">Finlandia</h3>
+      <img src="immagini/finlandia.jpg" alt="bandiera Finlandia" title="Finlandia" class="bandiere">
+      <button class="bottone">Helsinki</button>
+    </div>
+    
+    <div class="contenitore" value="2968815" name="PARIGI">
+      <h3 class="nome-paese">Francia</h3>
+      <img src="immagini/francia.jpg" alt="bandiera Francia" title="Francia" class="bandiere">
+      <button class="bottone">Parigi</button>
+    </div>
+    
+    <div class="contenitore" value="611717" name="TIBLISI">
+      <h3 class="nome-paese">Georgia</h3>
+      <img src="immagini/georgia.jpg" alt="bandiera Georgia" title="Georgia" class="bandiere">
+      <button class="bottone">Tiblisi</button>
+    </div>
+        
+    <div class="contenitore" value="2950158" name="BERLINO">
+      <h3 class="nome-paese">Germania</h3>
+      <img src="immagini/germania.jpg" alt="bandiera Germania" title="Bandiera Germania" class="bandiere">
+      <button class="bottone">Berlino</button>
+    </div>
+    
+    <div class="contenitore" value="264371" name="ATENE">
+      <h3 class="nome-paese">Grecia</h3>
+      <img src="immagini/grecia.jpg" alt="bandiera Grecia" title="Bandiera Grecia" class="bandiere">
+      <button class="bottone">Atene</button>
+    </div>
+    
+    <div class="contenitore" value="2964574" name="DUBLINO">
+      <h3 class="nome-paese">Irlanda</h3>
+      <img src="immagini/irlanda.jpg" alt="bandiera Irlanda" title="Bandiera Irlanda" class="bandiere">
+      <button class="bottone">Dublino</button>
+    </div>
+    
+    <div class="contenitore" value="6692263" name="REYKJAVIK">
+      <h3 class="nome-paese">Islanda</h3>
+      <img src="immagini/islanda.jpg" alt="bandiera Islanda" title="Bandiera Islanda" class="bandiere">
+      <button class="bottone">Reykjavik</button>
+    </div>
+    
+    <div class="contenitore" value="3169070" name="ROMA">
+      <h3 class="nome-paese">Italia</h3>
+      <img src="immagini/italia.jpg" alt="bandiera Italia" title="Bandiera Italia" class="bandiere">
+      <button class="bottone">Roma</button>
+    </div>
+    
+    <div class="contenitore" value="1538317" name="NUR-SULTAN">
+      <h3 class="nome-paese">Kazakistan</h3>
+      <img src="immagini/kazakistan.jpg" alt="bandiera Kazakistan" title="Bandiera Kazakistan" class="bandiere">
+      <button class="bottone">Nur-Sultan</button>
+    </div>
+    
+    <div class="contenitore" value="456172" name="RIGA">
+      <h3 class="nome-paese">Lettonia</h3>
+      <img src="immagini/lettonia.jpg" alt="bandiera Lettonia" title="Bandiera Lettonia" class="bandiere">
+      <button class="bottone">Riga</button>
+    </div>
+    
+    <div class="contenitore" value="3042030" name="VADUZ">
+      <h3 class="nome-paese piccolo">Liechtenstein</h3>
+      <img src="immagini/liechtestein.jpg" alt="bandiera Liechtenstein" title="Bandiera Liechtenstein" class="bandiere">
+      <button class="bottone">Vaduz</button>
+    </div>
+    
+    <div class="contenitore" value="593116" name="VILNIUS">
+      <h3 class="nome-paese">Lituania</h3>
+      <img src="immagini/lituania.jpg" alt="bandiera Lituania" title="Bandiera Lituania" class="bandiere">
+      <button class="bottone">Vilnius</button>
+    </div>
+    
+    <div class="contenitore" value="2960315" name="LUSSEMBURGO">
+      <h3 class="nome-paese piccolo">Lussemburgo</h3>
+      <img src="immagini/lussemburgo.jpg" alt="bandiera Lussemburgo" title="Bandiera Lussemburgo" class="bandiere">
+      <button class="bottone">Lussem burgo</button>
+    </div>
+    
+    <div class="contenitore" value="2562305" name="LA VALLETTA">
+      <h3 class="nome-paese">Malta</h3>
+      <img src="immagini/malta.jpg" alt="bandiera Malta" title="Bandiera Malta" class="bandiere">
+      <button class="bottone">La Valletta</button>
+    </div>
+    
+    <div class="contenitore" value="618426" name="CHISINAU">
+      <h3 class="nome-paese">Moldavia</h3>
+      <img src="immagini/moldavia.jpg" alt="bandiera Moldavia" title="Bandiera Moldavia" class="bandiere">
+      <button class="bottone">Chisinau</button>
+    </div>
+    
+    <div class="contenitore" value="2993458" name="MONACO">
+      <h3 class="nome-paese piccolo">Principato di Monaco</h3>
+      <img src="immagini/principato-di-monaco.jpg" alt="bandiera Monaco" title="Bandiera Monaco" class="bandiere">
+      <button class="bottone">Monaco</button>
+    </div>
+    
+    <div class="contenitore" value="3193044" name="PODGORICA">
+      <h3 class="nome-paese">Montenegro</h3>
+      <img src="immagini/montenegro.jpg" alt="bandiera Montenegro" title="Bandiera Montenegro" class="bandiere">
+      <button class="bottone">Podgorica</button>
+    </div>
+    
+    <div class="contenitore" value="3143244" name="OSLO">
+      <h3 class="nome-paese">Norvegia</h3>
+      <img src="immagini/norvegia.jpg" alt="bandiera Norvegia" title="Bandiera Norvegia" class="bandiere">
+      <button class="bottone">Oslo</button>
+    </div>
+    
+    <div class="contenitore" value="2759794" name="AMSTERDAM">
+      <h3 class="nome-paese">Paesi Bassi</h3>
+      <img src="immagini/paesi-bassi.jpg" alt="bandiera Paesi Bassi" title="Bandiera Paesi Bassi" class="bandiere">
+      <button class="bottone">Amsterdam</button>
+    </div>
+    
+    <div class="contenitore" value="756135" name="VARSAVIA">
+      <h3 class="nome-paese">Polonia</h3>
+      <img src="immagini/polonia.jpg" alt="bandiera Polonia" title="Bandiera Polonia" class="bandiere">
+      <button class="bottone">Varsavia</button>
+    </div>
+    
+    <div class="contenitore" value="6458923" name="LISBONA">
+      <h3 class="nome-paese">Portogallo</h3>
+      <img src="immagini/portogallo.jpg" alt="bandiera Portogallo" title="Bandiera Portogallo" class="bandiere">
+      <button class="bottone">Lisbona</button>
+    </div>
+    
+    <div class="contenitore" value="2643743" name="LONDRA">
+      <h3 class="nome-paese piccolo">Regno Unito</h3>
+      <img src="immagini/regno-unito.jpg" alt="bandiera Regno Unito" title="Bandiera Regno Unito" class="bandiere">
+      <button class="bottone">Londra</button>
+    </div>
+    
+    <div class="contenitore" value="3067696" name="PRAGA">
+      <h3 class="nome-paese piccolo">Repubblica Ceca</h3>
+      <img src="immagini/repubblica-ceca.jpg" alt="bandiera Repubblica Ceca" title="Bandiera Repubblica Ceca" class="bandiere">
+      <button class="bottone">Praga</button>
+    </div>
+    
+    <div class="contenitore" value="785842" name="SKOPJE">
+      <h3 class="nome-paese piccolo">Macedonia del Nord</h3>
+      <img src="immagini/macedonia-del-nord.jpg" alt="bandiera Macedonia del Nord" title="Bandiera Macedonia del Nord" class="bandiere">
+      <button class="bottone">Skopje</button>
+    </div>
+    
+    <div class="contenitore" value="683506" name="BUCAREST">
+      <h3 class="nome-paese">Romania</h3>
+      <img src="immagini/romania.jpg" alt="bandiera Romania" title="Bandiera Romania" class="bandiere">
+      <button class="bottone">Bucarest</button>
+    </div>
+    
+    <div class="contenitore" value="524894" name="MOSCA">
+      <h3 class="nome-paese">Russia</h3>
+      <img src="immagini/russia.jpg" alt="bandiera Russia" title="Bandiera Russia" class="bandiere">
+      <button class="bottone">Mosca</button>
+    </div>
+    
+    <div class="contenitore" value="3168070" name="SAN MARINO">
+      <h3 class="nome-paese">San Marino</h3>
+      <img src="immagini/san-marino.jpg" alt="bandiera San Marino" title="Bandiera San Marino" class="bandiere">
+      <button class="bottone">San Marino</button>
+    </div>
+    
+    <div class="contenitore" value="792680" name="BELGRADO">
+      <h3 class="nome-paese">Serbia</h3>
+      <img src="immagini/serbia.jpg" alt="bandiera Serbia" title="Bandiera Serbia" class="bandiere">
+      <button class="bottone">Belgrado</button>
+    </div>
+    
+    <div class="contenitore" value="3060972" name="BRATISLAVA">
+      <h3 class="nome-paese">Slovacchia</h3>
+      <img src="immagini/slovacchia.jpg" alt="bandiera Slovacchia" title="Bandiera Slovacchia" class="bandiere">
+      <button class="bottone">Bratislava</button>
+    </div>
+    
+    <div class="contenitore" value="3196359" name="LUBIANA">
+      <h3 class="nome-paese">Slovenia</h3>
+      <img src="immagini/slovenia.jpg" alt="bandiera Slovenia" title="Bandiera Slovenia" class="bandiere">
+      <button class="bottone">Lubiana</button>
+    </div>
+    
+    <div class="contenitore" value="6359304" name="MADRID">
+      <h3 class="nome-paese">Spagna</h3>
+      <img src="immagini/spagna.jpg" alt="bandiera Spagna" title="Bandiera Spagna" class="bandiere">
+      <button class="bottone">Madrid</button>
+    </div>
+    
+    <div class="contenitore" value="2673730" name="STOCCOLMA">
+      <h3 class="nome-paese">Svezia</h3>
+      <img src="immagini/svezia.jpg" alt="bandiera Svezia" title="Bandiera Svezia" class="bandiere">
+      <button class="bottone">Stoccolma</button>
+    </div>
+    
+    <div class="contenitore" value="2661552" name="BERNA">
+      <h3 class="nome-paese">Svizzera</h3>
+      <img src="immagini/svizzera.jpg" alt="bandiera Svizzera" title="Bandiera Svizzera" class="bandiere">
+      <button class="bottone">Berna</button>
+    </div>
+    
+    <div class="contenitore" value="323784" name="ANKARA">
+      <h3 class="nome-paese">Turchia</h3>
+      <img src="immagini/turchia.jpg" alt="bandiera Turchia" title="Bandiera Turchia" class="bandiere">
+      <button class="bottone">Ankara</button>
+    </div>
+    
+    <div class="contenitore" value="703448" name="KIEV">
+      <h3 class="nome-paese">Ucraina</h3>
+      <img src="immagini/ucraina.jpg" alt="bandiera Ucraina" title="Bandiera Ucraina" class="bandiere">
+      <button class="bottone">Kiev</button>
+    </div>
+    
+    <div class="contenitore" value="3054638" name="BUDAPEST">
+      <h3 class="nome-paese">Ungheria</h3>
+      <img src="immagini/ungheria.jpg" alt="bandiera Ungheria" title="Bandiera Ungheria" class="bandiere">
+      <button class="bottone">Budapest</button>
+    </div>
+    
+    
+  </div>
+  
+  <div id="centro">
+    <div class="esponiTempo" id="overlay">
+      <span id="croce"> &#10060 </span>  <!-- questa e' la crocetta per chiudere l'overlay-->
+      <div class="contenuto">
+        <p id="citta"></p>
+        <br>
+        <p id="temperatura"></p>
+        <br>
+        <p id="simbolo-tempo"></p>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+<footer>
+
+  <div>
+    <h5>FOOTER</h5>
+    <h6>Le informazioni sul tempo provengono dal sito: https://openweathermap.org</h6>
+    <h6>Le immagini delle bandiere provengono da: https://www.bandiere-mondo.it</h6>
+    <h6>Fonte dell'immagine dello sfondo: Foto di Petr Ganaj da Pexels</h6>
+  </div>
+  
+  <div class="destra">
+    <h6>Autore: <i>Massimo Dattero</i></h6>
+    <h6>contatto:</h6>
+    
+    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" class="social"><img src="immagini/Social-Linkedin.png" alt="logo di Linkedin"></a>
+    <a href="https://twitter.com/Massimo32462929" target="_blank" class="social"><img src="immagini/Social-Twitter.png" alt="logo di Twitter"></a>
+    <a href="https://www.facebook.com/massimo.dattero.73" target="_blank" class="social"><img src="immagini/Social-Facebook.png" alt="logo di Facebook"></a>
+    <a href="https://www.instagram.com/massimo.eu/" target="_blank" class="social"><img src="immagini/Social-Instagram.png" alt="logo di Instagram"></a>
+  
+  </div>
+  
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
