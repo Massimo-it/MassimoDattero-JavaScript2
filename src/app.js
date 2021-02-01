@@ -54,7 +54,6 @@ async function loadDoc(capital) {
 }
 
 function estraiAPI(capital) {
-	let API_KEY = "fdd1b2dd1a3650c3d65d13cdb9617ec1";
 	return fetch('https://api.openweathermap.org/data/2.5/weather?id=' + capital + '&appid=' + API_KEY);
 }
 
@@ -137,7 +136,6 @@ async function posizione(position) {
 function estraiAPIcoord(position) {
 	let lat = position.coords.latitude;
 	let longi = position.coords.longitude;
-	let API_KEY = "fdd1b2dd1a3650c3d65d13cdb9617ec1";
 	return fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + longi + '&appid=' + API_KEY);
 }
   
